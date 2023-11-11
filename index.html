@@ -12,10 +12,10 @@
     <header class="main-header" style="background-image: url(images/header\ bg.jpg);">
         <div class="container">
             <div class="row personal-profile">
-                <div class="col-md-4 personal-profile__avatar">
+                <div class="column personal-profile__avatar">
                     <img src="images/photo profile.jpg" alt="avatar">
                 </div>
-                <div class="col-md-8">
+                <div class="column">
                     <p class="personal-profile__name">Narayana Wijaya</p>
                     <p class="personal-profile__job">Mobile Engineer</p>
                     <div class="personal-profile__contacts">
@@ -42,13 +42,11 @@
         </div>
     </header>
     <section id="about" class="container section">
-        <div class="row">
-            <div class="col-md-10">
-                <h2 id="about_header" class="section__title" style="text-indent: 0px;">About Me</h2>
+        <div>
+            <h2 id="about_header" class="section__title" style="text-indent: 0px;">About Me</h2>
                 <p class="section__description">
                     " I am a Mobile Engineer with experience working for Enterprise and Startup product. Skilled at writing clean and testable code"
                 </p>
-            </div>
         </div>
     </section>
     <section id="portfolio" class="container section">
@@ -62,24 +60,23 @@
                         <a href="#" data-portfolio-target-tag="all">All</a>
                     </li>
                     <li>
-                        <a href="#" data-portfolio-target-tag="iOS">iOS Projects</a>
+                        <a href="#" data-portfolio-target-tag="iOS">iOS</a>
                     </li>
                     <li>
-                        <a href="#" data-portfolio-target-tag="Flutter">Flutter Projects</a>
+                        <a href="#" data-portfolio-target-tag="Flutter">Flutter</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="portfolio-card">
-            <div>
-                <h3 class="project-card__title">Expense Tracker</h3>
-            </div>
-            <div class="row project-card" data-portfolio-tag="iOS">
+        <div class="project-card">
+            <div class="row" data-portfolio-tag="iOS">
                 <div class="column project-card__img">
                     <img src="images/expense_tracker.png" alt="project-img">
                 </div>
-                <div class="column project-card__info">
-                    
+                <div class="column project-card__info">      
+                    <div>
+                        <h3 class="project-card__title">Expense Tracker</h3>
+                    </div>            
                     <p class="project-card__description">
                         A simple expense tracker application that enabled user to record their daily transaction locally. User have ability to add item list and put the transaction into category. This application build using SwiftUI with CoreData as persistance database. Transaction are grouped by date using fetch request section and can be filter by month. In the future it will be update with SwiftData and enable user to export monthly expense into editable document.
                     </p>
@@ -88,7 +85,10 @@
                         <li>SwiftUI</li>
                         <li>CoreData</li>
                     </ul>
-                    <a href="" class="project-card__link">Source Code</a>
+                    <div class="column project_card__links">
+                        <a href="https://github.com/narayana-wijaya/ExpenseTracker" class="project-card__link"><img src="images/github-logo.png" alt="Expense source code"></a>
+                        <a href="https://github.com/narayana-wijaya/ExpenseTracker" class="project-card__link"><img src="images/github-logo.png" alt="Expense source code"></a>
+                    </div>
                 </div>
             </div>
         </div>
