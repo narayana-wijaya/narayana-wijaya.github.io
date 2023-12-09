@@ -164,12 +164,22 @@ li {
     color: #999;
   }
 
+  #myBtnContainer {
+    margin: 0;
+    max-width: 600px;
+  }
+
   .btn {
     border: none;
     outline: none;
-    padding: 12px 16px;
+    text-transform: uppercase;
     background-color: #f1f1f1;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 16px 0;
+    width: 33.33333%;
     cursor: pointer;
+    color: #999;
   }
 
   .filterDiv {
@@ -185,7 +195,7 @@ li {
   }
 
   .btn.active {
-    background-color: #666;
+    background-color: #8ec3b3;
     color: white;
   }
 
@@ -194,7 +204,7 @@ li {
     transition: 0.3s;
     border-radius: 5px;
     padding: 8px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 
   .project-card .project-card__img img {
@@ -213,7 +223,6 @@ li {
     line-height: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
-    /* margin-left: 32px; */
   }
 
   .project-card .project-card__description {
@@ -225,6 +234,8 @@ li {
     margin-top: 50px;
     text-transform: uppercase;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: #999;
   }
 
   .tags {
@@ -234,6 +245,7 @@ li {
   .tags li {
     display: inline-block;
     font-size: 14px;
+    color: #999;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 14);
     padding: 5px 10px;
     margin-right: 10px;
