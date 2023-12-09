@@ -40,8 +40,7 @@
                         </dl>
                     </div>
                 </div>
-            </div>
-            
+            </div> 
         </div>
     </header>
     <section id="about" class="container section">
@@ -56,23 +55,13 @@
         <div>
             <h2 class="section__title">Personal Projects</h2>
         </div>
-        <div class="row portfolio-menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#" data-portfolio-target-tag="all">All</a>
-                    </li>
-                    <li>
-                        <a href="#" data-portfolio-target-tag="iOS">iOS</a>
-                    </li>
-                    <li>
-                        <a href="#" data-portfolio-target-tag="Flutter">Flutter</a>
-                    </li>
-                </ul>
-            </nav>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterProject('all-project')">All</button>
+            <button class="btn" onclick="filterProject('ios-project')">iOS</button>
+            <button class="btn" onclick="filterProject('flutter-project')">Flutter</button>
         </div>
-        <div class="project-card">
-            <div class="row" data-portfolio-tag="iOS">
+        <div class="project-card filterDiv ios-project">
+            <div class="row" data-portfolio-tag="ios-project">
                 <div class="column project-card__img">
                     <img src="images/expense_tracker.png" alt="project-img">
                 </div>
@@ -96,7 +85,33 @@
                 </div>
             </div>
         </div>
+        <div class="project-card filterDiv flutter-project">
+            <div class="row" data-portfolio-tag="flutter-project">
+                <div class="column project-card__img">
+                    <img src="images/chat-gpt.png" alt="project-img">
+                </div>
+                <div class="column project-card__info">      
+                    <div>
+                        <h3 class="project-card__title">Ai Chat GBuT</h3>
+                    </div>            
+                    <p class="project-card__description">
+                        A Chat GPT application with character personality. Chat with your personal assistance created by your preference.
+                    </p>
+                    <p class="project-card__stack">Stack:</p>
+                    <ul class="tags">
+                        <li>Flutter</li>
+                        <li>ChatGPT</li>
+                    </ul>
+                    <ul class="">
+                        <li class="project-card__link">
+                            <a href="https://github.com/narayana-wijaya/ExpenseTracker"><img src="images/github-logo.png" alt="Expense source code"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- <section id="professional project" class="container section"></section> -->
 </body>
+<script src="app.js"></script>
 </html>
